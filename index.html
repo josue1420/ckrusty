@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no" />
+    <title>krusti-burger</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="index.css" />
+    <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+  </head>
+  <body>
+    <!--inicio-->
+ 
+    <section id="inicio">
+      <!--encabezado-->
+      <header>
+      <div class="contenido-header">
+        <div class="logo">
+         <img src="logo.png" alt="">
+        </div>
+        <nav id="nav">
+          <ul>
+            <li>
+              <a href="#inicio" onclick="seleccionar()">
+                <i class="fa-solid fa-house"></i>
+                <span>INICIO</span>
+              </a>
+            </li>
+            <li>
+              <a href="#menu" onclick="seleccionar()">
+                <i class="fa-solid fa-burger"></i>
+                <span>MENU</span>
+              </a>
+            </li>
+            <li>
+            <a href="#videos" onclick="seleccionar()">
+              <i class="fa-solid fa-video"></i>
+              <span>VIDEOS</span>
+            </a>
+          </li>
+            <li>
+              <a href="#contacto" onclick="seleccionar()">
+                <i class="fa-solid fa-address-book"></i>
+                <span>CONTACTO</span>
+              </a>
+            </li>
+            
+          </ul>
+        </nav>
+
+        <div class="social">
+          <a href="tel:11-6631-4315">
+          <i class="fa-solid fa-phone-volume"></i>
+          11-6631-4315
+        </a>
+          <a href="https://instagram.com/krustty.burger?igshid=MzNlNGNkZWQ4Mg==" target="_blank">
+            <i class="fa-brands fa-instagram"></i>
+          </a>
+        
+        <a href="http://wa.me/541166314315" target="_blank">
+          <i class="fa-brands fa-whatsapp"></i>
+        </a>
+        </div>
+      <div class="nav-responsive" id="bar" onclick="mostrarOcultar()">
+        <i class="fa-solid fa-bars"></i>
+      </div>
+      </header>
+      <!--carrusel-->
+      <div class="carrusel">
+        <div class="gallery js-flickity" data-flickity-options='{"erapAround":true, "pageDots":false, "autoPlay":true}'>
+          <div class="gallery-cell">
+            <img src="g1.avif" alt="">
+          </div>
+          <div class="gallery-cell">
+            <img src="pz1.jpg" alt="">
+          </div>
+          <div class="gallery-cell">
+            <img src="ps.jpg" alt="">
+          </div>
+          <div class="gallery-cell">
+            <img src="g6.jpg" alt="">
+          </div>
+          <div class="gallery-cell">
+            <img src="g5.jpg" alt="">
+          </div>
+        </div>
+        <div class="info">
+          <h2>Bienvenidos a <span class="dom">Krusty-Burger</span></h2>
+          <p>Las mejores hamburguesas y los mejores sabores que podras encontar.</p>
+        </div>
+      </div>
+    </section>
+
+    <!--section menu-->
+    <section id="menu">
+      <h2>Hamburguesas</h2>
+      <div class="fila">
+        <div class="item">
+          <img src="g4.jpg" alt="">
+          <p>hamburguesa con doble chedar <br><span>$1480</span></p>
+          
+
+        </div>
+        <div class="item">
+          <img src="g4.jpg" alt="">
+          <p>hamburguesa con doble chedar<br><span>$1480</span></p>
+         
+
+        </div>
+        <div class="item">
+          <img src="g4.jpg" alt="">
+          <p>hamburguesa con doble chedar <br><span>$1480</span></p>
+          
+
+        </div>
+
+
+        </div>
+        <div class="fila">
+          <div class="item">
+            <img src="g4.jpg" alt="">
+            <p>hamburguesa con doble chedar<br><span>$1480</span></p>
+            
+  
+          </div>
+          <div class="item">
+            <img src="g4.jpg" alt="">
+            <p>hamburguesa con doble chedar <br><span>$1480</span></p>
+            
+  
+          </div>
+          <div class="item">
+            <img src="g4.jpg" alt="">
+            <p>hamburguesa con doble chedar<br><span>$1480</span></p>
+            
+  
+          </div>
+  
+  
+          </div>
+      <button id="button-over">VER MAS</button>
+    </section>
+
+   <section id="videos">
+    <div class="container">
+      <h1>GALERIA DE LOS SIMPSONS</h1>
+      <div class="video-container">
+        <div class="video"><iframe src="23x01 El Halcn Y El Hombre Doh.mp4" ></iframe></div>
+        <div class="video"><iframe src="23x04 Eres Reemplazable.mp4" ></iframe></div>
+        <div class="video"><iframe src="23x05 La Esposa Aficionada.mp4" ></iframe></div>
+        <div class="video"><iframe src="23x08 La Solucin Del 10 Por Ciento.mp4" ></iframe></div>
+        <div class="video"><iframe src="23x07 El Hombre De Los Pantalones De Flanela Azul.mp4" ></iframe></div>
+
+      </div>
+      <div class="popus-video">
+        <span>&times;</span>
+        <iframe src="23x01 El Halcn Y El Hombre Doh.mp4" autoplay controls></iframe>
+      </div>
+    </div>
+      <section id="contacto">
+        <div class="contenido-seccion">
+            <h2>ENCONTRANOS</h2>
+            <p><span>No Olvides Visitar Nuestro</span> Local 
+            </p>
+            <div class="fila">
+                <!--DATOS PERSONALES-->
+                <div class="col">
+                    <ul>
+                        <li>
+                            <strong>Dorreccion</strong>
+                            Gaspar Campos 4904
+                        </li>
+                        <li>
+                            <strong>Telefono</strong>
+                            11-6631-4315
+                        </li>
+                        <li>
+                            <strong>Email</strong>
+                            ckrusty.burger@gmail.com
+                        </li>
+
+                        <li>
+                            <strong>Horario</strong>
+                            <span>Lunes-Miercoles de 10-Am a 15-Pm Y de 19 a 00hs
+                              Martes-Cerrado Y Domingo Medio Dia Cerrado
+                            </span>
+                        </li>
+                    </ul>
+
+                </div>
+                </div>
+            </div>
+            <div class="map">
+              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3286.676790994073!2d-58.742013299999996!3d-34.5364158!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bc97e1439884e7%3A0x99e45cb03e8e4fb!2sAv.%20Gaspar%20Campos%204910%2C%20B1665%20Jos%C3%A9%20C.%20Paz%2C%20Provincia%20de%20Buenos%20Aires!5e0!3m2!1ses-419!2sar!4v1685399659403!5m2!1ses-419!2sar" width="100%" height="500" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+    </section>
+    <footer>
+      <p>Todos Los Derechos Reservados  <i class="fa-solid fa-code"></i> Desarrollo-J-G- 2023</p>
+      <div class="redes">
+          <a href="https://instagram.com/krustty.burger?igshid=MzNlNGNkZWQ4Mg==" target="_blank" ><i class="fa-brands fa-instagram"></i></a>
+          <a href="http://wa.me/541166314315" target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
+      </div>
+  
+  
+    </footer>
+    <script src="index.js"></script>
+    <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+  </body>
+</html>

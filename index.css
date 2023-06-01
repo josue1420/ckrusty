@@ -1,0 +1,384 @@
+@import url('https://fonts.googleapis.com/css2?family=Pangolin&family=Righteous&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Pangolin';
+}
+html{
+    scroll-behavior: smooth;
+}
+#inicio{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+#inicio header{
+    background-color: black;
+    width: 100%;
+}
+#inicio header .contenido-header{
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px 20px;
+    position: relative;
+}
+#inicio header .contenido-header nav{
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+}
+#inicio header .contenido-header nav ul{
+    display: flex;
+    list-style: none;
+}
+#inicio header .contenido-header .logo img{
+    width: 70px;
+}
+#inicio header .contenido-header nav ul li{
+    text-align: center;
+}
+#inicio header .contenido-header nav ul li i{
+    display: block;
+    color: #ffffff;
+    margin: 0 20px;
+}
+#inicio header .contenido-header nav ul li a{
+    display: inline-block;
+    text-decoration: none;
+    color: #ffffff;
+    margin: 0 20px;
+}
+.nav-responsive{
+    font-size: 25px;
+    color: #fff;
+   display: none;
+}
+#inicio header .contenido-header nav ul li:hover i{
+    color: yellow;
+}
+#inicio header .contenido-header .social a{
+    display: inline-block;
+    background-color: yellow;
+    text-decoration: none;
+    color: #000000;
+    padding: 10px 20px;
+    border-radius: 30px;
+}
+#inicio header .contenido-header .social a:hover{
+    background-color: #928f8f;
+    color: #ffffff;
+}
+/*carrucel*/
+#inicio .carrusel {
+    position: relative;
+    height: 100%;
+}
+#inicio .carrusel .info{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 50%;
+    color: #ffffff;
+    text-align: center;
+}
+#inicio .carrusel .info h2{
+    font-size: 50px;
+    margin-bottom: 20px;
+    font-family:'Righteous' ;
+}
+#inicio .carrusel .info .dom{
+    color: yellow;
+}
+#inicio .gallery{
+    width: 100%;
+    height: 100%;
+}
+#inicio .gallery-cell{
+    width: 100%;
+    margin-right: 10px;
+    height: 100%;
+}
+#inicio .gallery-cell img{
+    display: block;
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+}
+/*seccion menu*/
+#menu{
+    background-color: #0ef8d9;
+}
+#menu h2{
+    font-family: 'Pangolin';
+    text-align: center;
+    font-weight: bold;
+    font-size: 30px;
+    margin-bottom: 30px;
+    color: #fff;   
+}
+#menu .fila{
+    max-width: 100%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+}
+#menu .fila .item{
+    width: 33%;
+    position: relative;
+    overflow: hidden;
+}
+#menu .fila .item img{
+    width: 100%;
+    display: block;
+    padding: 2px;
+}
+#menu .fila .item p{
+    position: absolute;
+    width: 100%;
+    bottom: -100%;
+    padding: 10px;
+    background-color: yellow;
+    color: #ffffff;
+    transition: .5s;
+}
+#menu .fila .item p span{
+    text-align: center;
+    color: #000000;
+    width: 200px;
+}
+#menu .fila .item:hover p{
+    bottom: 0;
+}
+#menu button{
+    display: block;
+    width: fit-content;
+    margin: auto;
+    font-size: 20px;
+    border: none;
+    background-color: yellow;
+    color: #000000;
+    padding: 7px 25px;
+    border-radius: 30px;
+    cursor: pointer;
+}
+
+/*videos*/
+#videos .container{
+    position: relative;
+    min-height: 100vh;
+    background: yellow;
+}
+#videos .container h1{
+    color: #ffffff;
+    text-align: center;
+    padding: 15px;
+    font-size: 40px;
+    font-weight: normal;   
+}
+#videos .container .video-container{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    justify-content: center;
+    padding: 10pz;
+}
+#videos .container .video-container .video{
+    height: 250px;
+    width: 350px;
+    border: 5px solid #fff;
+    border-radius: 5px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, .7);
+    cursor: pointer;
+    overflow: hidden;
+}
+#videos .container .video-container .video iframe{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    transition: .2s linear;
+}
+#videos .container .video-container .video:hover iframe{
+    transform: scale(1.1);
+}
+#videos .container .popus-video{
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    background: rgba(0, 0, 0, .8);
+    height: 100%;
+    width: 100%;
+    display: none;
+}
+#videos .container .popus-video iframe{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 750px;
+    border-radius: 5px;
+    border: 3px solid #fff;
+    object-fit: cover;
+}
+#videos .container .popus-video span{
+    position: absolute;
+    top: 5px;
+    right: 20px;
+    font-size: 50px;
+    color: #fff;
+    font-weight: bolder;
+    z-index: 100;
+    cursor: pointer;
+}
+@media (max-width:768px){
+    #videos .container .popus-video iframe{
+        width: 95%;
+    }
+}
+#contacto{
+    background-color: black;
+    color: #fff;
+    padding: 50px 20px;
+}
+#contacto .contenido-seccion{
+    max-width: 1100px;
+    margin: auto;
+}
+#contacto h2{
+    font-size: 48px;
+    font-family: 'Pangolin';
+    text-align: center;
+    padding: 20px 0;
+}
+#contacto .contenido-seccion p{
+    font: 18px;
+    line-height: 22px;
+    margin-bottom: 20px;
+}
+#contacto .contenido-seccion p span{
+    color: yellow;
+    font-weight: bold;
+}
+#contacto .fila{
+    display: flex;
+}
+#contacto .fila .col{
+    width: 50%;
+}
+#contacto .fila .col ul{
+    list-style: none;
+}
+#contacto .fila .col ul li{
+    margin: 12px 0;
+    text-align: left;
+}
+#contacto .fila .col ul li strong{
+    display: inline-block;
+    color: yellow;
+    width: 130px;
+}
+#contacto .fila .col ul li span{
+    background-color: rgb(255, 255, 255);
+    color: #000000;
+    padding: 3px;
+    font-weight: bold;
+    border-radius: 5px;
+}
+#contacto .fila .col ul li span{
+    color: rgb(0, 0, 0);
+    cursor: pointer;
+}
+
+#contacto .map {
+    filter: grayscale(100%) invert(92%), contrast(93%);
+}
+
+footer{
+    background-color: yellow ;
+    color: #fff;
+    text-align: center;
+    padding: 30px 0;
+}
+
+footer a{
+    text-decoration: none;
+    color: #fff;
+    display: inline-block;
+    margin: 5px;
+    font-size: 26px;
+}
+
+footer .redes a:hover{
+    color: #000000;
+}
+@media screen and (max-width:1070px){
+    #inicio header .contenido-header .social{
+        display: none;
+    }
+    #inicio header .contenido-header nav{
+        position: static;
+        transform: translate(0);
+    }
+    #menu .fila {
+        display: block;
+    }
+    #menu .fila .item{
+        display: block;
+        width: 100%;
+    }
+   
+    #inicio header .contenido-header nav{
+        position: initial;
+        display: none;
+        transform: translate(0);
+    }
+    .nav-responsive{
+        display: block;
+    }
+    #inicio header .contenido-header{
+        padding: 20px;
+    }
+    /*esto va a hacer que aparezca*/
+    #inicio header .contenido-header nav.responsive{
+        display: block;
+        position: absolute;
+        top: 70px;
+        left: 0;
+        width: 100%;
+        height: 100vh;
+        background-color: #928f8f;
+        z-index: 99;
+    }
+    nav.responsive ul{
+        display: block !important;
+    }
+    nav.responsive ul li{
+        border-bottom:  1px solid #fff;
+        padding: 10px 0;
+    }
+    #contacto h2{
+        display: block;
+        margin: 20px 0 3px 0;
+    }
+    #contacto p{
+        display: block;
+        text-align: center;
+    }
+   #contacto .contenido-seccion .fila .col ul li {
+         display: block;
+        text-align: initial;
+    }
+    #contacto .contenido-seccion .fila .col {
+        display: block;
+        text-align: center;
+    }
+    #contacto .map{
+        display: inline-block;
+        width: 100%;
+    }
+
+}
